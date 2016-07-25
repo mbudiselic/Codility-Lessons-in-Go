@@ -1,5 +1,9 @@
+/*
+https://codility.com/programmers/task/genomic_range_query/
+*/
 package solution
 
+//Solution - Codility.com - GenomicRangeQuery
 func Solution(S string, P []int, Q []int) []int {
 	genes := []string{"A", "C", "G", "T"}
 	n := len(S)

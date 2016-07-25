@@ -1,3 +1,6 @@
+/*
+https://codility.com/programmers/task/max_counters/
+*/
 package solution
 
 // you can also use imports, for example:
@@ -6,6 +9,7 @@ package solution
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
+//Solution - Codility.com - MaxCounters
 func Solution(N int, A []int) []int {
 	// write your code in Go 1.4
 	counters := make([]int, N)

@@ -1,3 +1,6 @@
+/*
+https://codility.com/programmers/task/passing_cars/
+*/
 package solution
 
 // you can also use imports, for example:
@@ -6,17 +9,19 @@ package solution
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
+//Solution - Codility.com - PassingCars
 func Solution(A []int) int {
 	// write your code in Go 1.4
-	m := make(map[int]int)
-	for _, v := range A {
-		if v > 0 {
-			m[v]++
+	var sum, n int
+	for i := len(A) - 1; i >= 0; i-- {
+		if A[i] == 1 {
+			n++
+		} else {
+			sum += n
 		}
 	}
-	var i int
-	for m[i+1] != 0 {
-		i++
+	if sum > 1000000000 {
+		return -1
 	}
-	return i + 1
+	return sum
 }

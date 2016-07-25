@@ -1,3 +1,6 @@
+/*
+https://codility.com/programmers/task/min_avg_two_slice/
+*/
 package solution
 
 // you can also use imports, for example:
@@ -7,6 +10,7 @@ import "math"
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
+//Solution - Codility.com - MinAvgTwoSlice
 func Solution(A []int) int {
 	// write your code in Go 1.4
 	pref := prefSum(A)

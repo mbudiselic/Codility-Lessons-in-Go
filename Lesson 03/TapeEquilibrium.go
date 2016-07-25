@@ -1,3 +1,7 @@
+/*
+https://codility.com/programmers/task/tape_equilibrium/
+*/
+
 package solution
 
 // you can also use imports, for example:

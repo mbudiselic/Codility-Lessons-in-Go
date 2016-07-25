@@ -1,4 +1,6 @@
-
+/*
+https://codility.com/programmers/task/frog_river_one/
+*/
 package solution
 
 // you can also use imports, for example:
@@ -7,22 +9,19 @@ package solution
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
-func Solution(A []int) int {
+//Solution - Codility.com - FrogRiverOne
+func Solution(X int, A []int) int {
 	// write your code in Go 1.4
-	N := len(A)
-	positions := make([]int, N)
-	var sum int
-	for _, v := range A {
-		if v > N {
-			return 0
-		}
+	positions := make([]int, X)
+	var moves int
+	for i, v := range A {
 		if positions[v-1] != 1 {
 			positions[v-1] = 1
-			sum += v
+			moves++
+		}
+		if moves == X {
+			return i
 		}
 	}
-	if sum == (N*(N+1))/2 {
-		return 1
-	}
-	return 0
+	return -1
 }

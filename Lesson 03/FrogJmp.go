@@ -1,3 +1,7 @@
+/*
+https://codility.com/programmers/task/frog_jmp/
+*/
+
 package solution
 
 // you can also use imports, for example:
@@ -6,6 +10,7 @@ package solution
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
+//Solution - Codility.com - FrogJmp
 func Solution(X int, Y int, D int) int {
 	// write your code in Go 1.4
 	diff := Y - X

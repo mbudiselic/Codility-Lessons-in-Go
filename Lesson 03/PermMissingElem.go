@@ -1,3 +1,7 @@
+/*
+https://codility.com/programmers/task/perm_missing_elem/
+*/
+
 package solution
 
 // you can also use imports, for example:
@@ -6,18 +10,14 @@ package solution
 // you can use fmt.Println for debugging purposes, e.g.
 // fmt.Println("this is a debug message")
 
+//Solution - Codility.com - PermMissingElem
 func Solution(A []int) int {
 	// write your code in Go 1.4
-	var sum, n int
-	for i := len(A) - 1; i >= 0; i-- {
-		if A[i] == 1 {
-			n++
-		} else {
-			sum += n
-		}
+	N := len(A) + 1
+	fullSum := (N * (N + 1)) / 2
+	sum := 0
+	for _, v := range A {
+		sum += v
 	}
-	if sum > 1000000000 {
-		return -1
-	}
-	return sum
+	return fullSum - sum
 }

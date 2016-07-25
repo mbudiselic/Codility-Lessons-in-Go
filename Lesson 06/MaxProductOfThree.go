@@ -1,7 +1,11 @@
+/*
+https://codility.com/programmers/task/max_product_of_three/
+*/
 package solution
 
 import "sort"
 
+//Solution - Codility.com - MaxProductOfThree
 func Solution(A []int) int {
 	N := len(A)
 
